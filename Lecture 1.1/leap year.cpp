@@ -21,16 +21,18 @@ main()
 	cout << "Enter second year :";
 	cin >> y;
 
-	
+	int count = y - x;
+	int total = (count / 4) + 1;
+	int array[total];
 	for(int i=x ; i<=y ; i++)
 	{
 		if(i%4==0)
 		{
-			cout << i << "\t";
+			cout << i << "\t" << endl;
+			array[total] = total;
 		}
 	}
-	
-	
+	cout << endl <<"Total leap year is : "<< array[total]  ;
 	
 	
 }
