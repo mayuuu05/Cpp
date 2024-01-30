@@ -32,7 +32,7 @@ class Employee
 		
 		cin.ignore();
 		cout << "Enter role         : ";
-	    getline(cin,role);
+	        getline(cin,role);
 //		cin >> role ;
 //		
 		cout << "Enter salary       : ";
@@ -56,8 +56,8 @@ class Employee
 	
     void output()
 	{    
-	    cout << "ID           :" << id << endl;
-	    cout << "Name         :" << name << endl;                     
+	        cout << "ID           :" << id << endl;
+	        cout << "Name         :" << name << endl;                     
 		cout << "Age          :" << age << endl;
 		cout << "Role         :" << role << endl;
 		cout << "Salary       :" << salary << endl;
