@@ -13,7 +13,7 @@ using namespace std;
 class Distance 
 {
 	public :
-	int feet,inch;
+	int feet1,inch1,sum,sum1,feet,inch;
 	
 	void input1()
 	{
@@ -24,18 +24,25 @@ class Distance
 	}
 	void input2()
 	{
+		
 		cout << "Enter feet : ";
-		cin >> feet;
+		cin >> feet1;
 		cout << "Enter inch : ";
-		cin >> inch;
+		cin >> inch1;
+	}
+	void add()
+	{
+		sum =  feet + feet1;
+		sum1 = inch + inch1;
 	}
 	void output()
 	{
-		int a = inch / 12;
-	    feet = feet + a;
-	    inch = inch - (a * 12); 
+		int a = sum1 / 12;
+	    sum = sum + a;
+	    sum1 = sum1 - (a * 12); 
 	    
-	    cout << feet << " feet" << inch <<" inches";
+	    cout << sum << " feet " << sum1 <<" inches";
+	    
 	}
 };
 int main()
@@ -43,6 +50,7 @@ int main()
 	Distance d1;
 	d1.input1();
 	d1.input2();
+	d1.add();
 	d1.output();
 	return 0;
 }
