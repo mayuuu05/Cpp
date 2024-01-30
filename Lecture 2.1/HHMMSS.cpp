@@ -27,8 +27,8 @@ class hhmmss
 int main()
 {
 	hhmmss h1;
-    h1.input();
-    cout << endl << "Second convert into hh:mm:ss :-" << endl;
+        h1.input();
+        cout << endl << "Second convert into hh:mm:ss :-" << endl;
 	h1.convert();
 	h1.output();
 	return 0;
