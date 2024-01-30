@@ -12,18 +12,25 @@ class Car
 {
 	public :
 	int id,release_year,model;
-	char company_name[50],color[50];
+	string company_name,color;
 	
 	void input()
 	{
 		cout << "Enter id           : ";
 		cin >> id ;
+		
+		cin.ignore();
 		cout << "Enter company_name : ";
-		cin >> company_name ;
+		getline(cin,company_name);
+//		cin >> company_name ;
+
 		cout << "Enter color        : ";
-		cin >> color ;
+		getline(cin,color);
+//		cin >> color ;
+
 		cout << "Enter model        : ";
 		cin >> model ;
+		
 		cout << "Enter release_year : ";
 		cin >> release_year ;
 		
@@ -46,6 +53,7 @@ int main()
 	int i;
 	for(i=0 ; i<4 ; i++)
 	{
+		cout << endl << "Car : " << i+1 ;
 		cout << endl;
 		c[i].input();
 	}
