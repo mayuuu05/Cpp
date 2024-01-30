@@ -22,26 +22,34 @@ class Employee
 		cout << "Enter id           : ";
 		cin >> id ;
 		
+		cin.ignore();
 		cout << "Enter name         : ";
-		cin >> name ;
-		
+		getline(cin,name);
+//		cin >> name ;
+//		
 		cout << "Enter age          : ";
 		cin >> age ;
 		
+		cin.ignore();
 		cout << "Enter role         : ";
-		cin >> role ;
-		
+	    getline(cin,role);
+//		cin >> role ;
+//		
 		cout << "Enter salary       : ";
 		cin >> salary ;
 		
+		cin.ignore();
 		cout << "Enter city         : ";
-		cin >> city ;
-		
+		getline(cin,city);
+//		cin >> city ;
+//		
 		cout << "Enter experience   : ";
 		cin >> experience ;
 		
+		cin.ignore();
 		cout << "Enter company_name : ";
-		cin >> company_name ;
+		getline(cin,company_name);
+//		cin >> company_name ;
 		
     }
 	
