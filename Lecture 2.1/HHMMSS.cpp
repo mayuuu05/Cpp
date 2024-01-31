@@ -16,7 +16,7 @@ class hhmmss
 	{
 		hour = second / 3600;
 		minutes = (second % 3600)/60;
-		second = minutes * 60 ;
+		second = second % 60 ;
 	}
 	void output()
 	{
