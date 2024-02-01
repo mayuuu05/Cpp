@@ -17,7 +17,7 @@ class Customer
 	private:
 	int id;
 	int age;
-	int mobile_number;
+	long long mobile_number;
 	int simcard_validity;
 	
 	string name;city,telecom_brand_name;
