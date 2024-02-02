@@ -23,12 +23,9 @@ class Fastfood_cafe
 	public :
 	Fastfood_cafe()
 	{
+		
 		cout << endl << "----------Fast Food cafe information----------" << endl ;
-	}	
-	
-	void input()
-	{
-		cout << endl <<"Enter cafe id : ";
+			cout << endl <<"Enter cafe id : ";
 		cin >> cafe_id;
 		
 		cin.ignore();
@@ -50,7 +47,7 @@ class Fastfood_cafe
 		
 		cout << "Enter cafe staff quantity : ";
 		cin >> cafe_staff_quantity;
-	}
+	}	
 	
 	~Fastfood_cafe()
 	{
@@ -72,12 +69,6 @@ int main()
 	cin >> n;
 	
 	Fastfood_cafe c1[n];
-	
-	for(int i=0; i<n ; i++)
-	{
-		c1[i].input();	
-	}
-	
 	
 	return 0;
 }
