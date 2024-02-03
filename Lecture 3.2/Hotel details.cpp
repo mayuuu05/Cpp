@@ -65,13 +65,16 @@ int Hotel :: hotel_establish_year =5;
 int main()
 {
 	cout << "----------Hotel Record System----------" << endl << endl;
-	Hotel h[50];
-	for(int i=0 ; i<3 ; i++)
+	int n;
+	cout << "Enter numbers : " ;
+	cin >> n;
+	Hotel h[n];
+	for(int i=0 ; i<n ; i++)
 	{
 		h[i].input();
 	}
 	cout << endl << endl << "Hotel details" << endl;
-	for(int i=0 ; i<3 ; i++)
+	for(int i=0 ; i<n ; i++)
 	{
 
 		h[i].output();	
