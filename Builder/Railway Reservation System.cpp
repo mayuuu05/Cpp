@@ -34,10 +34,10 @@ class Railway_Reservation
 		
 		cin.ignore();
 		cout << "Enter Train name : ";
-	    getline(cin,Train_name);
+	        getline(cin,Train_name);
 	    
 		cout << "Enter Destination : ";
-	    getline(cin,Destination);
+	        getline(cin,Destination);
 	}
 	void Display_Records()
 	{
@@ -61,29 +61,31 @@ class Railway_Reservation
 	void All_record()
 	{
 		char choice;
-		cout << endl << "Enter your choice (Like A,B,C,D) : " ; 
-		cout << endl<<"[A] Continue Adding Train record" << endl;
+		cout << endl << "Welcome to the Indian railway service !!!!" << endl ;
+		cout << "How can i help you ?" << endl;
+		cout <<"[A] Continue Adding Train record" << endl;
 		cout << "[B] All Records are Display " << endl;
 		cout << "[C] All record display By Searching Train Number" << endl;
 		cout << "[D] For Exit" << endl;
-		cout << "Enter : " ; 
+		cout << "Enter your choice (Like A,B,C,D) : " ; 
 		cin >> choice;
 		
-		if(choice=='A')
+		if (choice == 'A')
 		{
 			user_input();
+			
 		}
-	    else if(choice=='B')
+	        else if (choice == 'B')
 		{
 			Display_Records();
 		}
-		else if(choice=='C')
+		else if (choice == 'C')
 		{
 			Search();
 		}
-		else if(choice=='D')
+		else if (choice == 'D')
 		{
-			cout << "Thank you!" << endl;
+			cout << "Thank you !";
 		}
 		else
 		{
@@ -103,6 +105,7 @@ int main()
 	int n;
 	cout << "Enter number : ";
 	cin >> n;
+	
 	Railway_Reservation t1[n];
 	
 	for(int i=0; i<n ; i++)
