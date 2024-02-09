@@ -8,8 +8,7 @@ using namespace std;
 class X
 {
 	protected :
-		int a, b, c;
-		
+		int a, b, c;	
 };
 class Y : public X
 {
@@ -17,7 +16,6 @@ class Y : public X
 	    int cube1, cube2, cube3;
 		int sum=0;
 	public :
-		
 		void set()
 		{
 			cout << "Enter the value of a : ";
