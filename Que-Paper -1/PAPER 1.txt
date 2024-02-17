@@ -1,0 +1,28 @@
+1. Define a class named Rectangle with private attributes length and width. Implement public member functions to 
+set and get the values of these attributes. Include a method to calculate the area of the rectangle. 
+Create an object of the Rectangle class and demonstrate the functionality of the implemented methods.
+
+2. Define a class named `Employee` with private attributes `name`, `salary`, and `designation`. Encapsulate these attributes
+ using appropriate access specifiers. Implement public member functions to set and get the values of these attributes. Demonstrate
+ the encapsulation concept by accessing these attributes through the member functions.
+
+3. Define a base class `Shape` with private attributes `color` and `area`. Implement public member 
+unctions for setting and getting the color and calculating the area. Derive two classes, `Circle` and
+ `Rectangle`, from the `Shape` class. Implement methods to calculate the area specific to each shape. 
+Demonstrate abstraction by calling the area calculation methods for both `Circle` and `Rectangle`.
+
+4. Extend the `Shape` hierarchy from Question 3 to include a virtual function `display()`.
+ Implement the `display()` function in each derived class to print information specific to the shape.
+ Create an array of `Shape` pointers, pointing to objects of different shapes. Demonstrate polymorphism by calling the `display()` function for each object.
+
+5. Overload the `+` operator for the `Employee` class to add the salaries of two employees.
+ Create two `Employee` objects and demonstrate the use of the overloaded `+` operator to calculate and display the total salary.
+
+6. Define a class `Calculator` with a method that performs division.
+ Implement exception handling to handle the case of division by zero.
+ Create an object of the `Calculator` class and demonstrate exception handling for division by zero.
+
+7. Define an abstract class `Animal` with virtual functions `sound()` and `move()`.
+ Implement concrete/normal classes `Dog` and `Bird` that inherit from `Animal`.
+ Demonstrate polymorphism by creating an array of `Animal` pointers pointing to objects of both `Dog` and `Bird`.
+ Call the `sound()` and `move()` functions for each object.
