@@ -23,8 +23,7 @@ class Distance
 		cin >> inch;
 	}
 	void input2()
-	{
-		
+        {
 		cout << "Enter feet : ";
 		cin >> feet1;
 		cout << "Enter inch : ";
