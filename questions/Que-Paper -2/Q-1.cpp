@@ -11,8 +11,9 @@ class Movie
 	public :
 	void set()
 	{
-		cin.ignore();
+		
 		cout << endl << "Movie Title : ";
+		cin.ignore();
 		getline(cin,title);
 		
 		cout << "Movie genre : ";
@@ -41,10 +42,6 @@ int main()
 	for(i=0; i<n; i++)
 	{
 		m1[i].set();
-	}
-	
-	for(i=0; i<n; i++)
-	{
 		m1[i].get();
 	}
 	
