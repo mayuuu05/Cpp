@@ -4,20 +4,24 @@
 //// aspecific sound. Demonstrate abstraction by calling the sound methods for both `Dog` and `Cat`.
 //
 
-#include<stdio.h>
+#include<iostream>
 using namespace std;
 
 class Animal
 {
-	string name,sound;
+	
+	string name;
 	public:
+	virtual void sound() =0;
+	
 	void setting()
 	{
-		
+		cout << "Enter name : ";
+		cin >> name;
 	}
 	void getting()
 	{
-		
+		cout << "Name  :" << name << endl;
 	}
 };
 class Dog : public Animal
@@ -25,6 +29,10 @@ class Dog : public Animal
 	public:
 	void sound()
 	{
+		cout << endl <<"\t[Dog]" << endl << endl;
+		setting();
+		getting();
+		cout <<"Dog sound barks !" << endl;
 		
 	}
 };
@@ -33,11 +41,20 @@ class Cat : public Animal
 	public:
 	void sound()
 	{
-		
+		cout << endl << "\t[Cat]" << endl << endl;
+		setting();
+		getting();
+		cout << "Cat sound meows!"<<endl;
 	}
 };
 
 int main()
 {
+	
+	Dog d1;
+	d1.sound();
+	
+	Cat c1;
+	c1.sound();
 	return 0;
 }
