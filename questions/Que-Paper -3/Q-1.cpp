@@ -15,13 +15,12 @@ class Book
 		{
 			cout <<endl << "\tBook [" << i  << "]" << endl << endl ;
 		
-			cin.ignore();
+			
 			cout << "Enter title of book : ";
+			cin.ignore();
 			getline(cin,title);
-		
 			cout << "Enter author name   : ";
 			getline(cin,author);
-			
 			cout << "Enter published Year : ";
 			cin >> publishedYear;
 			
@@ -46,10 +45,10 @@ int main()
 	
 	Book b1[n];
 	int i;
-	for(i=1 ;i<=n; i++)
+	for(i=0 ;i<n; i++)
 	{
-		b1[i].set(i);
-		b1[i].get(i);
+		b1[i].set(i+1);
+		b1[i].get(i+1);
 	} 
 	return 0;
 }
