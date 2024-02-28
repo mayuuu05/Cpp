@@ -12,11 +12,14 @@ class Laptop
 	int price;
 	
 	public:
-	void detail(string name,string processor,int price)
+		
+	Laptop (string name,string processor,int price)
 	{
+
 		this -> name = name;
 		this -> processor = processor;
 		this -> price = price;
+		
 		
 		cout << endl  << "-----------------Laptop details -----------------" << endl <<endl ;
 		
@@ -27,8 +30,8 @@ class Laptop
 };
 int main()
 {
-	Laptop l1;
-	l1.detail("Laptop HP 650 G4","Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz   1.90 GHz",30000);
+	Laptop l1("Laptop HP 650 G4","Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz   1.90 GHz",30000);
+
 	return 0;
 	
 }
