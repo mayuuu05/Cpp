@@ -26,6 +26,7 @@ class MathOperations
 		 		{
 					
 					throw b;
+					throw a;
 	
 				}	
 				
