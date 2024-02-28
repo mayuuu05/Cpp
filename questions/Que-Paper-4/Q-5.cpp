@@ -22,16 +22,17 @@ class MathOperations
 		{
 			try
 	 		{
-		 		if(b==0 && b<0 && a<0)
+		 		if(b==0 || b<0 || a<0)
 		 		{
-					cout <<  "Divison is : " << a/b << endl;
 					
+					throw b;
 	
 				}	
 				
 				else
 				{
-					throw b;
+					
+					cout <<  "Divison is : " << a/b << endl;
 				}
 			
 			}
